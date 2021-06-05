@@ -37,7 +37,7 @@ export default function ({ navigation }) {
 					<Icon name="wechat" type="antdesign" size={24} color="black"/>
 				}
 			/>
-			<Button onPress={createChat} title="Create new Chat"/>
+			<Button disabled={!input } onPress={createChat} title="Create new Chat"/>
 		</View>
 	)
 }
